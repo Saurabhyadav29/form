@@ -1,0 +1,42 @@
+.login-whole{
+    max-width: 978px;
+       
+}
+.login-whole h2{
+   margin-bottom: 20px;
+
+}
+.span-tag span{
+    margin-bottom: 1%;
+}
+#login-form input,
+.login-btn {
+    border: 1px solid #e9ecef;
+    padding: .9em 1em;
+}
+ .login-link{
+    padding: 50px 1em;
+}
+
+#form>input,
+.login-btn {
+    border: 1px solid #e9ecef;
+    padding: .9em 1em;
+}
+#login-form .login-btn {
+    background-color: #003049;
+    color: #e9ecef;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 860px) {
+    .login-whole {
+        max-width: 978px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+    }
+}
