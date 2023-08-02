@@ -1,12 +1,17 @@
-import "./App.css";
+import React from "react";
+import Navbar from "./Navbar";
 import Form from "./components/Form";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Form></Form>
+    <div>
+      <Navbar />
+      <main>
+        <Form />
+      </main>
     </div>
   );
-}
+};
 
 export default App;

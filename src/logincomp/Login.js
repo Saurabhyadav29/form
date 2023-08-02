@@ -1,4 +1,6 @@
 import React from "react";
+import { faUser, faLock } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./login.css";
 
 const LoginForm = () => {
@@ -9,7 +11,7 @@ const LoginForm = () => {
 
   return (
     <>
-      <div className="login-whole">
+      <div>
         <h2>Login Page</h2>
 
         <form
@@ -17,8 +19,15 @@ const LoginForm = () => {
           className="flex flex-col"
           onSubmit={handleLoginSubmit}
         >
-          <input type="email" placeholder="Email" name="email" />
-          <input type="password" placeholder="Password" name="password" />
+          <div className="form-login-field">
+            <FontAwesomeIcon icon={faUser} />
+
+            <input type="email" placeholder="Email" name="email" />
+          </div>
+          <div className="form-login-field">
+            <FontAwesomeIcon icon={faLock} />
+            <input type="password" placeholder="Password" name="password" />
+          </div>
 
           <button className="login-btn">Login</button>
         </form>

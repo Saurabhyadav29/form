@@ -1,28 +1,52 @@
-.login-whole{
-    max-width: 978px;
-       
+body {
+    margin-bottom: 10px;
 }
-.login-whole h2{
-   margin-bottom: 20px;
+
+h2 {
+    margin-bottom: 19px;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.login-whole h2 {
+    margin-bottom: 20px;
 
 }
-.span-tag span{
+
+.span-tag span {
     margin-bottom: 1%;
 }
+
 #login-form input,
 .login-btn {
     border: 1px solid #e9ecef;
     padding: .9em 1em;
 }
- .login-link{
+
+#login-form input {
+    padding: -0.1em;
+}
+
+.login-link {
     padding: 50px 1em;
 }
+
 
 #form>input,
 .login-btn {
     border: 1px solid #e9ecef;
     padding: .9em 1em;
 }
+
+#login-form .login-btn:hover {
+    background-color: #1683be;
+    /* color: #4679ac; */
+    font-size: 1em;
+    cursor: pointer;
+}
+
 #login-form .login-btn {
     background-color: #003049;
     color: #e9ecef;
@@ -30,13 +54,23 @@
     cursor: pointer;
 }
 
-@media screen and (min-width: 860px) {
-    .login-whole {
-        max-width: 978px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        height: 100vh;
-    }
+.form-login-field input {
+    border: 1px solid #7795b3;
+    width: 240px;
+    height: 20px;
+
+}
+
+svg:not(:root).svg-inline--fa,
+svg:not(:host).svg-inline--fa {
+    overflow: visible;
+    margin-right: 10px;
+
+    box-sizing: content-box;
+}
+
+@media screen and (min-width: 878px) {
+    /* The styles inside this block will only apply to screens with a minimum width of 878 pixels and above */
+
+    
 }
